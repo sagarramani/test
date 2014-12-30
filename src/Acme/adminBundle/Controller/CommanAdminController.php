@@ -8,6 +8,7 @@ class CommanAdminController extends Controller
 {
     public function ChangePasswordAction()
     {//echo'<pre>';print_r($_POST);exit;
+	//test
         return $this->render('adminBundle:comman_admin:ChangePassword.html.twig');
     }
 	 public function AnimalMasterAction()
