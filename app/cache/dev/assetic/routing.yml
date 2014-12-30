@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:/Bitnami/wappstack-5.4.35-0/apache2/htdocs/Symfony/app/config/routing_dev.yml'

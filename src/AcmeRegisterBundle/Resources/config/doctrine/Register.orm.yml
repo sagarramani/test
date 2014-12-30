@@ -1,0 +1,32 @@
+AcmeRegisterBundle\Entity\Register:
+    type: entity
+    table: register
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 25
+            fixed: false
+            comment: ''
+        email:
+            type: text
+            nullable: false
+            length: null
+            fixed: false
+            comment: ''
+        phNo:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            column: ph_no
+    lifecycleCallbacks: {  }

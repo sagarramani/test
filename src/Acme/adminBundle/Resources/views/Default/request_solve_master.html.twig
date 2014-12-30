@@ -1,0 +1,155 @@
+{% extends 'base.html.twig' %}
+
+{% block Javascript %}
+{% endblock %} 
+{% block stylesheets%}
+	<link type="text/css" rel="stylesheet" href="../css/login.css" ></style>
+	<link type="text/css" rel="stylesheet" href="../css/media_screen.css" ></style>
+	<link type="text/css" rel="stylesheet" href="../css/style.css" ></style>
+{%endblock%}
+{% block body %}
+	<div class="main_contanear">
+	<!--start_dody_left_area-->
+	<div class="dody_left_area">
+	<div class="logo_area">
+		<a href="#"><img src="../images/logo2.png" alt="" /></a>
+	</div>
+    
+	<div class="left_bottom_logo_area">
+		<img src="../images/logo3.png" alt="" />
+		<p>Village Code List<br /> Tagno Check Formula</p>
+		<h2>Copyright © 2014 <a href="#">amul.org.in</a></h2>
+	</div>
+    
+</div>
+<!--end_dody_left_area-->
+
+<!--start_dody_right_area-->
+<div class="dody_right_area">
+	<div class="main_nav_contanear">
+    	<!--nav_area-->
+    	<div class="main_nav_area">
+        <div id='menu2'>
+    <ul>
+    	<li id="active1" class='has-sub2 '><a href="{#index.html#}">HO Admin</a>
+        	<ul>
+			<li class='has-sub2 '><a href="{{ path('Login')}}">Login Creation</a></li> 
+            <li class='has-sub2 '><a href="{{ path('SMS')}}">SMS Sending</a></li> 
+            <li class='has-sub2 '><a href="{{ path('Union_Creation')}}"> Union Creation</a> 
+            	{#<ul>
+                	<li class='has-sub2 '><a href="#"> Union</a></li> 
+                    <li class='has-sub2 '><a href="#"> Society</a></li> 
+                    <li class='has-sub2 '><a href="#"> Village</a></li> 
+                    <li class='has-sub2 '><a href="#"> House Hold</a></li> 
+                    <li class='has-sub2 '><a href="#"> Animal Master</a></li> 
+                    <li class='has-sub2 '><a href="#"> Animal Movement</a></li> 
+                    <li class='has-sub2 '><a href="#"> Re-Tag Animal</a></li> 
+                    <li class='has-sub2 '><a href="#"> Camp Master</a></li> 
+                    <li class='has-sub2 '><a href="#"> Change Password</a></li> 
+                    <li class='has-sub2 '><a href="#"> User Master</a></li> 
+                    <li class='has-sub2 '><a href="#"> News Master</a></li> 
+                    <li class='has-sub2 '><a href="#"> Next F.I.P Meeting Setting</a></li> 
+                    <li class='has-sub2 '><a href="#"> Announcement Master</a></li> 
+                    <li class='has-sub2 '><a href="#"> FIP MOM Upload Tool</a></li> 
+                </ul>#}
+            </li>
+            <li class='has-sub2 '><a href="{{ path('Newsmaster')}}"> News Master</a> 
+            	{#<ul>
+                	<li class='has-sub2 '><a href="#"> Change Species</a></li>
+                    <li class='has-sub2 '><a href="#"> Change Animal to DRY</a></li>
+                    <li class='has-sub2 '><a href="#"> Change Animal to NECO</a></li>
+                </ul>#}
+            </li>
+            <li class='has-sub2 '><a href="{{ path('Announcementmaste')}}">Announcement Maste</a> </li>
+            <li class='has-sub2 '><a href="{{ path('mmut')}}"> Minutes of Meeting Upload Tool</a> </li>
+            <li class='has-sub2 '><a href="{{path('data_tool')}}"> Data Sync Tool</a> </li>
+            <li class='has-sub2 '><a href="{{path('request_solve_master')}}"> Request Solve Master</a> </li>
+            <li class='has-sub2 '><a href="{{path('meeting_data_setting')}}"> Next Meeting Date Setting</a> </li>
+            <li class='has-sub2 '><a href="{{path('recirpient_master')}}"> Reciepient Master</a> </li>
+            </ul>
+        </li>
+        <li  class='has-sub2 '><a href="{{ path('unionadmin')}}">union Admin</a>
+        	<ul>
+            	<li class='has-sub2 '><a href="{{ path('Society')}}">Society</a></li>
+            	<li class='has-sub2 '><a href="{{ path('Village')}}">Village</a></li>
+                <li class='has-sub2 '><a href="{{ path('HouseHold')}}">House Hold</a></li>
+                <li class='has-sub2 '><a href="{{ path('UserMaster')}}">User Master</a></li>
+                
+            </ul>
+        </li>
+        
+        <li  class='has-sub2 '><a href="#">Common Admin</a>
+        	<ul>
+            	<li class='has-sub2 '><a href="{{ path('ChangePassword')}}">Change Password</a></li>
+                <li class='has-sub2 '><a href="{{ path('AnimalMaster')}}">Animal Master</a></li>
+                <li class='has-sub2 '><a href="{{ path('AnimalRetagging')}}">Animal Retagging</a></li>
+                <li class='has-sub2 '><a href="{{ path('AnimalMovement')}}">Animal Movement</a></li>
+                <li class='has-sub2 '><a href="{{ path('Link_Grahak_to_Animal')}}">Link Grahak to Animal</a></li>
+            </ul>
+        </li>
+        
+        <li  class='has-sub2 '><a href="#">FIP</a>
+        	<ul>
+			<li class='has-sub2 '><a href="{{ path('CampMaster')}}">Camp Master</a></li>
+			<li class='has-sub2 '><a href="{{ path('CampVisit')}}">Camp Visit</a></li>
+			<li class='has-sub2 '><a href="{{ path('Add_Animal_in_FIP')}}" class="login-window">Add Animal in FIP</a></li>
+		</ul>
+        </li>
+        
+        <li class='has-sub2 '><a href="{{ path('PEP')}}"> PEP </a>
+		<ul>
+			<li class='has-sub2 '><a href="#"> Master</a> 
+            	<ul>
+                	<li class='has-sub2 '><a href="Bull_master">Bull master</a></li> 
+                    <li class='has-sub2 '><a href="AI_technical_Employee_Master">AI technical Employee Master </a></li> 
+                    <li class='has-sub2 '><a href="AI_center">AI center</a></li> 
+                    <li class='has-sub2 '><a href="AI_technician">Assign D.C.S to AI technician</a></li> 
+                    <li class='has-sub2 '><a href="AI_Animal_master">AI Animal master</a></li> 
+                    <li class='has-sub2 '><a href="AI_Animal_Movement">AI Animal Movement</a></li> 
+                    <li class='has-sub2 '><a href="Death_Sold_Register">Death Sold Register</a></li> 
+                     
+                </ul>
+			</li>
+			<li class='has-sub2 '><a href="{{ path('CampVisit')}}">Camp</a></li>
+			<li class='has-sub2 '><a href="{{ path('CampVisit')}}">AI</a></li>
+			<li class='has-sub2 '><a href="{{ path('CampVisit')}}">reports</a></li>
+			<li class='has-sub2 '><a href="{{ path('CampVisit')}}">formats</a></li>
+			</ul>
+			</li>
+        <li class='has-sub2 '><a href=""> Calf rearing </a></li>
+         </ul>
+    </div>
+        </div>
+        <!--nav_area-->
+        
+        <div class="profile_and_logout_area">
+        	<div class="logout_area"><a href="#"><img src="../images/logout_but.png" alt="" /></a></div>
+            
+            <div class="profile_area">
+            	<div class="profile_img_area">
+                <img src="../images/prifile_img.png" alt="" />
+                </div>
+                <div class="profile_text_area">
+                <p>Welcome<br /><span>Assif Alim</span></p>
+                </div>
+                <div class="profile_drop_area">
+                <div id='menu'>
+                <ul>
+                    <li  class='has-sub '><a href="our_services.html"><img src="../images/dropdown_img.png" alt="" /></a>
+                        <ul>
+                            <li class='has-sub '><a href="https://smsinternet.teamwork.com/">Login Portal</a></li>
+                            <li class='has-sub '><a href="#">Support Services</a></li>
+                            <li class='has-sub '><a href="https://smsinternetcorporation.freshbooks.com/">Pay Invoices</a></li>
+                            <li class='has-sub '><a href="#">Join a Meeting</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<b>comming soon............</b>
+
+{% endblock %}

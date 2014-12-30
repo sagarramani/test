@@ -1,0 +1,12 @@
+@media screen and (max-width:1340px)
+
+{
+body
+{
+	font-family: 'OpenSansRegular';
+	background:url(../images/body_bg.jpg) repeat;
+	overflow-x:scroll;
+	
+}
+}
+

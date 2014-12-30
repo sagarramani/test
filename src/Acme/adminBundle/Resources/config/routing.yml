@@ -1,0 +1,93 @@
+Union_Creation:
+    path:     /Union_Creation
+    defaults: { _controller: adminBundle:Default:Union_Creation }
+Login:
+    path:     /Login
+    defaults: { _controller: adminBundle:Default:login }
+SMS:
+    path:     /SMS
+    defaults: { _controller: adminBundle:Default:sms }
+Newsmaster:
+    path:     /Newsmaster
+    defaults: { _controller: adminBundle:Default:Newsmaster }
+Announcementmaste:
+    path:     /Announcementmaste
+    defaults: { _controller: adminBundle:Default:Announcementmaste }
+unionadmin:
+    path:     /unionadmin
+    defaults: { _controller: adminBundle:Default:unionadmin }
+mmut:
+    path:     /mmut
+    defaults: { _controller: adminBundle:Default:mmut }
+data_tool:
+    path:     /data_tool
+    defaults: { _controller: adminBundle:Default:datatool }
+request_solve_master:
+    path:     /request_solve_master
+    defaults: { _controller: adminBundle:Default:request_solve_master }
+meeting_data_setting:
+    path:     /meeting_data_setting
+    defaults: { _controller: adminBundle:Default:meeting_data_setting }
+recirpient_master:
+    path:     /recirpient_master
+    defaults: { _controller: adminBundle:Default:recirpient_master }
+Society:
+    path:     /Society
+    defaults: { _controller: adminBundle:UnionAdmin:Society }
+Village:
+    path:     /Village
+    defaults: { _controller: adminBundle:UnionAdmin:Village }
+HouseHold:
+    path:     /HouseHold
+    defaults: { _controller: adminBundle:UnionAdmin:HouseHold }
+UserMaster:
+    path:     /UserMaster
+    defaults: { _controller: adminBundle:UnionAdmin:UserMaster }
+ChangePassword:
+    path:     /ChangePassword
+    defaults: { _controller: adminBundle:CommanAdmin:ChangePassword }
+AnimalMaster:
+    path:     /AnimalMaster
+    defaults: { _controller: adminBundle:CommanAdmin:AnimalMaster }
+AnimalRetagging:
+    path:     /AnimalRetagging
+    defaults: { _controller: adminBundle:CommanAdmin:AnimalRetagging }
+AnimalMovement:
+    path:     /AnimalMovement
+    defaults: { _controller: adminBundle:CommanAdmin:AnimalMovement }
+Link_Grahak_to_Animal:
+    path:     /Link_Grahak_to_Animal
+    defaults: { _controller: adminBundle:CommanAdmin:Link_Grahak_to_Animal }
+CampMaster:
+    path:     /CampMaster
+    defaults: { _controller: adminBundle:Fip:CampMaster }
+CampVisit:
+    path:     /CampVisit
+    defaults: { _controller: adminBundle:Fip:CampVisit }
+Add_Animal_in_FIP:
+    path:     /Add_Animal_in_FIP
+    defaults: { _controller: adminBundle:Fip:Add_Animal_in_FIP }
+PEP:
+    path:     /PEP
+    defaults: { _controller: adminBundle:PEPAdmin:PEP }
+Bull_master:
+    path:     /Bull_master
+    defaults: { _controller: adminBundle:PEPAdmin:Bull_master }
+AI_technical_Employee_Master:
+    path:     /AI_technical_Employee_Master
+    defaults: { _controller: adminBundle:PEPAdmin:AI_technical_Employee_Master }
+AI_center:
+    path:     /AI_center
+    defaults: { _controller: adminBundle:PEPAdmin:AI_center }
+AI_technician:
+    path:     /AI_technician
+    defaults: { _controller: adminBundle:PEPAdmin:AI_technician }
+AI_Animal_master:
+    path:     /AI_Animal_master
+    defaults: { _controller: adminBundle:PEPAdmin:AI_Animal_master }
+AI_Animal_Movement:
+    path:     /AI_Animal_Movement
+    defaults: { _controller: adminBundle:PEPAdmin:AI_Animal_Movement }
+Death_Sold_Register:
+    path:     /Death_Sold_Register
+    defaults: { _controller: adminBundle:PEPAdmin:Death_Sold_Register }
